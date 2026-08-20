@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Reset básico de estilos */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+        background-color: rebeccapurple;
+        color: #333333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* Container centralizado */
+    .login-container {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    /* Card principal */
+    .login-card {
+        background-color: #ffffff;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #1a1a1a;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        color: #666666;
+        margin-bottom: 24px;
+        text-align: center;
+    }
+
+    /* Campos do Formulário */
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 18px;
+    }
+
+    .input-group label {
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #444444;
+    }
+
+    .input-group input {
+        padding: 12px 14px;
+        border: 1px solid #cccccc;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        outline: none;
+        transition: border-color 0.2s ease;
+    }
+
+    .input-group input:focus {
+        border-color: #0066cc;
+    }
+
+    /* Ações adicionais */
+    .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .forgot-password {
+        font-size: 0.85rem;
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    .forgot-password:hover {
+        text-decoration: underline;
+    }
+
+    /* Botão Principal */
+    .btn-submit {
+        width: 100%;
+        padding: 12px;
+        background-color: #0066cc;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .btn-submit:hover {
+        background-color: #0052a3;
+    }
+
+    /* Rodapé do Card */
+    .card-footer {
+        margin-top: 24px;
+        text-align: center;
+        font-size: 0.85rem;
+        color: #666666;
+    }
+
+    .card-footer a {
+        color: #0066cc;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .card-footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+
+<main class="login-container">
+    <div class="login-card">
+        <h1 class="title">Entrar</h1>
+        <p class="subtitle">Acesse sua conta para continuar</p>
+
+        <form class="login-form">
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+            </div>
+
+            <div class="form-actions">
+                <a href="#" class="forgot-password">Esqueceu a senha?</a>
+            </div>
+
+            <button type="submit" class="btn-submit">Entrar</button>
+        </form>
+
+        <footer class="card-footer">
+            <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </footer>
+    </div>
+</main>
+
+</body>
+</html>
